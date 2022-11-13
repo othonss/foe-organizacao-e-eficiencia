@@ -1,0 +1,63 @@
+@use '../1-base/variables'
+
+.observacao
+    background-color: rgba(0, 0, 0, 0.5)
+    z-index: 10
+    min-height: 120vh
+    max-height: auto
+    width: 100vw
+    position: absolute
+    margin-top: -115vh
+    display: none
+    align-content: center
+    align-items: center
+
+    &-conteudo
+        background-color: variables.$bg-color-main
+        width: 800px
+        height: auto
+        display: flex
+        flex-direction: column
+        margin: 100px auto 0px auto
+        padding: 10px
+        border-radius: 5px
+
+        &-fechar
+            width: 30px
+            height: 30px
+            margin-right: -8px
+            background-image: url(../imagens/close.svg)
+            background-repeat: no-repeat
+            background-size: 20px
+            border: 0px transparent
+            cursor: pointer
+            background-color: variables.$bg-color-main
+            align-self: flex-end
+        
+        &-imagem
+            margin: 0 auto
+            position: relative
+            width: 400px
+            margin-bottom: 10px
+
+            img
+                border-radius: 5px
+                margin: 0
+                padding: 0
+                width: 100%
+        
+        p
+            margin-bottom: 20px
+
+        h2
+            margin-bottom: 20px 
+        
+        &-mensagem
+            resize: none
+            width: 775px
+            height: 200px
+            margin-bottom: 20px
+
+.btn-obs-materiais
+    width: 200px !important
+    

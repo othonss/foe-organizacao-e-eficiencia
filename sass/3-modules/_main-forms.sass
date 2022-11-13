@@ -1,0 +1,50 @@
+@use '../1-base/variables'
+
+.main-forms
+    width: 200px
+    margin-top: 30px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    button
+        margin-bottom: 30px 
+
+    label
+        align-self: flex-start
+        margin-bottom: 5px
+        color: variables
+
+    input, select
+        padding: 10px
+        margin-bottom: 20px
+        width: 200px
+        height: 40px
+        background-color: variables.$bg-color
+        border-radius: 5px
+        border: 0px transparent
+    
+    input[type="file"]
+        display: none
+    
+    .label-anexar
+        padding: 10px
+        margin-bottom: 20px
+        width: 200px
+        height: 40px
+        background-color: variables.$bg-color
+        border-radius: 5px
+        border: 0px transparent
+        cursor: pointer
+
+        &:hover
+            color: variables.$bg-color-main
+            background-color: variables.$title-color
+    
+    select
+        appearance: none
+        background-image: url(../imagens/arrow-down.svg)
+        background-repeat: no-repeat
+        background-size: 20px
+        background-position: right
+    

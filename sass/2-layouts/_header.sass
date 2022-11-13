@@ -1,0 +1,65 @@
+@use '../1-base/variables'
+
+.header
+    height: 13vh
+    display: flex
+
+    &-menu
+        margin: 0px 30px 0px 0px
+        display: flex
+        align-items: center
+        width: 70%
+        
+        &-arealogo
+            width: 20.5vw
+
+            &-logotipo
+                margin-left: 30px
+                width: 60px
+
+        &-navegacao
+            display: none
+            width: 300px
+            display: flex
+            justify-content: space-between
+            height: 13vh
+
+            a
+                text-align: center
+                line-height: 1.2rem
+                padding: 30px 25px 0px 25px
+                height: 100%
+        
+    &-search
+        //display: none
+        width: 30%
+        text-align: right
+        margin-right: 30px
+        padding-top: 30px
+
+        input
+            border: 0px solid transparent
+            color: variables.$text-search-color
+            background-color: variables.$bg-color-main 
+            height: 30px
+            border-radius: 10px
+            text-align: center
+        
+        span
+            color: variables.$text-search-color
+            background-color: variables.$bg-color-main 
+            height: 30px
+
+            button
+                height: 30px
+                width: 30px
+                border-radius: 10px
+                background-color: variables.$bg-color-main 
+                border: 0px solid transparent
+                color: variables.$text-search-color
+                cursor: pointer
+
+        
+                    
+                    
+                        

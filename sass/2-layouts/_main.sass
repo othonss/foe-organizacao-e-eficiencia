@@ -1,0 +1,91 @@
+@use '../1-base/variables'
+@use 'layouts-mixins'
+
+.principal
+    min-height: 82vh
+    max-height: auto
+    display: flex
+
+    &-esquerda
+        background-image: url("../imagens/logo-grande.svg")
+        background-repeat: no-repeat
+        background-size: 250px
+        background-position: center top
+        background-color: variables.$bg-color-main
+        width: 20vw
+        height: auto
+        margin-right: 0.5vw
+    
+    &-direita
+        background-color: variables.$bg-color-main
+        width: 79.5vw
+        height: auto
+        display: flex
+        align-items: center
+        padding-bottom: 20px
+
+        div
+            @include layouts-mixins.conteudo-direita
+
+    .inicio
+        display: flex
+        flex-direction: row
+        align-content: flex-start
+        align-items: flex-start
+        margin-top: 20px
+
+    .area-inicio-btns
+        margin-right: 60px
+    
+    .area-inicio-observacoes
+        h2
+            margin-bottom: 20px
+        div
+            height: auto
+            width: 500px
+            border-radius: 5px
+
+            p
+                background-color: variables.$bg-color
+                height: 30px
+                margin-bottom: 2px
+                width: 100%
+                border-radius: 5px 
+                padding-left: 10px 
+                display: flex
+                align-content: center
+                align-items: center
+                justify-content: space-between
+
+                .tarefas
+                    margin-right: 10px
+                    .feita
+                        background-color: variables.$bg-color
+                        border-radius: 5px
+                        border: 0px transparent
+                        cursor: pointer
+                        width: 20px
+                        height: 20px
+                        background-image: url(../imagens/check.svg)
+                        background-repeat: no-repeat
+                        background-position: center top
+                        background-size: 20px
+                        margin-right: 10px 
+
+                    .cancelada
+                        background-color: variables.$bg-color
+                        border-radius: 5px
+                        border: 0px transparent
+                        cursor: pointer
+                        width: 20px
+                        height: 20px
+                        background-image: url(../imagens/close.svg)
+                        background-repeat: no-repeat
+                        background-position: center top
+                        background-size: 20px
+                    
+
+        
+        
+
+        
